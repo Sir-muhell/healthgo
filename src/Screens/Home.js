@@ -44,13 +44,16 @@ const Home = () => {
           </FadeIn>
           <FadeIn
             from="left"
-            positionOffset={400}
+            positionOffset={400}q
             triggerOffset={200}
             delayInMilliseconds={300}
           >
-            <button className="mt-8 bg-primary text-white font-bold py-3 px-6 rounded inline-flex items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-              <span className="mr-2">Download Now</span> <HiArrowNarrowRight />
-            </button>
+            <a href="https://play.google.com/store/search?q=healthgo&c=apps">
+              <button className="mt-8 bg-primary text-white font-bold py-3 px-6 rounded inline-flex items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                <span className="mr-2">Download Now</span>{" "}
+                <HiArrowNarrowRight />
+              </button>
+            </a>
           </FadeIn>
         </div>
         <div className="col-span-3 lg:pt-0 pt-10">
