@@ -13,12 +13,11 @@ import Partner2 from "../Assets/partner2.png";
 import Partner3 from "../Assets/partner3.png";
 import Partner4 from "../Assets/partner4.png";
 import Partner5 from "../Assets/partner5.png";
+import Partner0 from "../Assets/partner0.png";
 
 import "animate.css";
 import Ticker from "react-ticker";
-const images = [
- Partner1, Partner2, Partner3, Partner4, Partner5
-];
+const images = [Partner0, Partner1, Partner2, Partner3, Partner4, Partner5];
 
 const Home = () => {
   return (
@@ -216,22 +215,24 @@ const Home = () => {
         <p className="text-primary text-left about-head animate__animated animate__zoomInDown">
           Our Partners
         </p>
-        <div className="mt-10 ticker">
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              whiteSpace: "nowrap",
-            }}
-          >
-            {images.map((image, i) => (
-              <img
-                key={i}
-                src={image}
-                className="ticker-item"
-                alt={`Partner ${i + 1}`}
-              />
-            ))}
+        <div style={{overflowX:"hidden"}}>
+          <div className="mt-10 ticker">
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                whiteSpace: "nowrap",
+              }}
+            >
+              {images.map((image, i) => (
+                <img
+                  key={i}
+                  src={image}
+                  className="ticker-item"
+                  alt={`Partner ${i + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -17,12 +17,11 @@ const Eve = () => {
             kindly check out pictures and videos from past events
           </p>
           <a href="./">
-          <button class="mt-8 bg-primary hover:bg-white hover:text-primary text-white font-bold py-3 px-6 rounded inline-flex items-center">
-            <span className="mr-2">Check Past Events</span>
-            <HiArrowNarrowRight />
-          </button>
+            <button class="mt-8 bg-primary hover:bg-white hover:text-primary text-white font-bold py-3 px-6 rounded inline-flex items-center">
+              <span className="mr-2">Check Past Events</span>
+              <HiArrowNarrowRight />
+            </button>
           </a>
-         
         </div>
         <div className="col-span-3">
           <img src={Img} alt="" />
@@ -57,6 +56,26 @@ const Eve = () => {
           <p className="h-about-header  text-primary text-center">
             Other Events
           </p>
+          <div className="lg:grid grid-cols-7">
+            <div className="col-span-4 lg:mr-20">
+              <p className="text-primary home-head lg:mt-20">
+                There's no event happening soon...
+              </p>
+              <p className="sub-head mt-10">
+                You'd be informed as soon as there's an event coming up.For now,
+                kindly check out pictures and videos from past events
+              </p>
+              {/* <a href="./">
+                <button class="mt-8 bg-primary hover:bg-white hover:text-primary text-white font-bold py-3 px-6 rounded inline-flex items-center">
+                  <span className="mr-2">Check Past Events</span>
+                  <HiArrowNarrowRight />
+                </button>
+              </a> */}
+            </div>
+            <div className="col-span-3">
+              <img src={Img} alt="" />
+            </div>
+          </div>
         </div>
       </section>
       <Partner

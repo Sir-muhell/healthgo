@@ -6,6 +6,7 @@ body {
   max-width: 1700px;
   font-family: Sofia Sans;
   margin: 0 auto;
+ 
 }
 
 /* Navbar */
@@ -1250,7 +1251,7 @@ input {
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-300%);
+      transform: translateX(-400%);
     }
   }
 }
@@ -1288,6 +1289,6 @@ input {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-80%);
+    transform: translateX(-150%);
   }
 }
