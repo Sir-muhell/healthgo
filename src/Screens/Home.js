@@ -8,12 +8,17 @@ import Connect from "../Components/Connect";
 import Partner from "../Components/Partner";
 import Mission2 from "../Components/Mission2";
 import { FadeIn } from "react-slide-fade-in";
+import Partner1 from "../Assets/partner1.png";
+import Partner2 from "../Assets/partner2.png";
+import Partner3 from "../Assets/partner3.png";
+import Partner4 from "../Assets/partner4.png";
+import Partner5 from "../Assets/partner5.png";
+
 import "animate.css";
 import Ticker from "react-ticker";
-import Partner1 from "../Assets/partner1.png";
-import Partner2 from "../Assets/partner2.jpg";
-import Partner3 from "../Assets/partner3.png";
-import Partner4 from "../Assets/partner4.jpg";
+const images = [
+ Partner1, Partner2, Partner3, Partner4, Partner5
+];
 
 const Home = () => {
   return (
@@ -44,7 +49,8 @@ const Home = () => {
           </FadeIn>
           <FadeIn
             from="left"
-            positionOffset={400}q
+            positionOffset={400}
+            q
             triggerOffset={200}
             delayInMilliseconds={300}
           >
@@ -210,15 +216,23 @@ const Home = () => {
         <p className="text-primary text-left about-head animate__animated animate__zoomInDown">
           Our Partners
         </p>
-        <div className="mt-10">
-          <Ticker>
-            {({ index }) => (
-              <>
-                <h1>This is the Headline of element #{index}!</h1>
-                <img src={Partner1} alt="" />
-              </>
-            )}
-          </Ticker>
+        <div className="mt-10 ticker">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {images.map((image, i) => (
+              <img
+                key={i}
+                src={image}
+                className="ticker-item"
+                alt={`Partner ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <Partner

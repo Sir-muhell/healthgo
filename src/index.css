@@ -1231,6 +1231,28 @@ input {
     letter-spacing: -0.02em;
     text-align: left;
   }
+
+  .ticker{
+    white-space: nowrap;
+    animation: ticker-animations 10s linear infinite both !important ;
+  }
+  
+  .ticker-item{
+    display: inline-block;
+    padding-right: 70px;
+    width: auto;
+    height: 100px;
+    
+  }
+
+  @keyframes ticker-animations {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
 }
 
 .career-head {
@@ -1248,4 +1270,24 @@ input {
   letter-spacing: -0.02em;
   text-align: left;
   font-variation-settings: "wdth" 100;
+}
+
+.ticker{
+  white-space: nowrap;
+  animation: ticker-animation 10s linear infinite both ;
+}
+
+.ticker-item{
+  display: inline-block;
+  padding-right: 70px;
+  
+}
+
+@keyframes ticker-animation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
 }
