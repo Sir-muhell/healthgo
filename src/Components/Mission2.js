@@ -5,12 +5,12 @@ import Img6 from "../Assets/image7.svg";
 const Mission2 = () => {
   return (
     <>
-      <div className="waitlist-section pt-32 lg:pt-60"></div>
+      <div className="waitlist-section pt-32 lg:pt-72"></div>
       <section className="pb-10 bg-primary">
-        <div className="lg:p-20 lg:pb-40 p-10 ">
+        <div className="lg:p-20 lg:pb-40 p-10 lg-screen">
           <div className="grid grid-cols-7 mission-about">
             <div className="col-span-2 ">
-              <img src={Img5} className="mission-img" alt="" />
+              <img src={Img5} className="mission-img" alt="Mission" />
             </div>
             <div className="col-span-5 ">
               <p className="text-white about-text">
@@ -28,12 +28,12 @@ const Mission2 = () => {
               </p>
             </div>
             <div className="col-span-2">
-              <img src={Img6} className="mission-img" alt="" />
+              <img src={Img6} className="mission-img" alt="Vision" />
             </div>
           </div>
         </div>
       </section>
-      <div className="waitlist-section-down pt-32 lg:pt-48 "></div>
+      <div className="waitlist-section-down pt-32 lg:pt-72 "></div>
     </>
   );
 };

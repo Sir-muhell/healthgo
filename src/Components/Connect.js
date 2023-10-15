@@ -1,5 +1,5 @@
 import React from "react";
-import Icon1 from "../Assets/icon1.svg";
+// import Icon1 from "../Assets/icon1.svg";
 import Icon2 from "../Assets/icon2.svg";
 import Icon3 from "../Assets/icon3.svg";
 import Icon4 from "../Assets/icon4.svg";
@@ -10,12 +10,12 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 const Connect = () => {
   return (
-    <section className="lg:p-20 lg:pt-40 lg:pb-0 p-10 pt-20">
+    <section className="lg:p-20 lg:pt-40 lg:pb-0 p-10 pt-20 lg-screen">
       <div className="lg:grid grid-cols-7">
         <div className="col-span-3">
           <img
             src={Img8}
-            alt=""
+            alt="Connect"
             className="animate__animated animate__infinite	infinite animate__swing"
           />
         </div>
@@ -29,24 +29,27 @@ const Connect = () => {
           </div>
           <div className="pt-10 icons animate__animated animate__shakeX animate__delay-5s ">
             <a href="https://www.linkedin.com/company/healthgohq/">
-              <img src={Icon6} alt="" />
+              <img src={Icon6} alt="linkedin" />
             </a>
             <a href="https://www.instagram.com/healthgohq/">
-              <img src={Icon5} alt="" />
+              <img src={Icon5} alt="instagram" />
             </a>
             <a href="https://twitter.com/healthgoHQ">
-              <img src={Icon3} alt="" />
+              <img src={Icon3} alt="twitter" />
             </a>
-            {/* <a href="https://"> <img src={Icon1} alt="" /></a> */}
+            {/* <a href="https://"> <img src={Icon1} alt="facebook" /></a> */}
             <a href="https://t.me/HealthgoHQ">
-              <img src={Icon2} alt="" />
+              <img src={Icon2} alt="telegram" />
             </a>
             <a href="https://medium.com/@HealthGO_HQ">
-              <img src={Icon4} alt="" />
+              <img src={Icon4} alt="medium" />
             </a>
           </div>
-          <button class="mt-8 bg-secondary border border-primary hover:bg-primary hover:text-white text-primary font-bold py-3 px-6 rounded  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-            <a href="mailto:hello@healthgotechnologies.com" className="inline-flex items-center">
+          <button className="mt-8 bg-secondary border border-primary hover:bg-primary hover:text-white text-primary font-bold py-3 px-6 rounded  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <a
+              href="mailto:hello@healthgotechnologies.com"
+              className="inline-flex items-center"
+            >
               <span className="mr-2">Send a mail</span> <HiArrowNarrowRight />
             </a>
           </button>

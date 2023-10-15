@@ -6,7 +6,7 @@ import { FadeIn } from "react-slide-fade-in";
 const Partner = ({ Question, Offer, Number, List }) => {
   return (
     <>
-      <div className="waitlist-section pt-20 lg:pt-60"></div>
+      <div className="waitlist-section pt-36 lg:pt-72"></div>
       <section className="pb-10 bg-primary">
         <FadeIn
           from="left"
@@ -14,14 +14,14 @@ const Partner = ({ Question, Offer, Number, List }) => {
           triggerOffset={200}
           delayInMilliseconds={0}
         >
-          <div className="lg:p-20 p-10 lg:grid grid-cols-7">
+          <div className="lg:p-20 p-10 lg:grid grid-cols-7 lg-screen">
             <div className="col-span-4 mr-10">
               <p className="waitlist-head text-white">{Question}</p>
               <p className="waitlist-head text-white">Partner with Us...</p>
               <div className="col-span-4">
                 <p className="text-white about-sub mt-10 ">
-                  HealthGO Technologies is Africa’s gateway to quality,
-                  affordable and faster Healthcare.
+                  HealthGo is Africa’s gateway to quality, affordable and faster
+                  healthcare assistance leveraging blockchain and AI.
                 </p>
                 <div className="offer text-white mt-10">
                   <p>{Offer} </p>
@@ -31,17 +31,20 @@ const Partner = ({ Question, Offer, Number, List }) => {
                   </div>
                 </div>
               </div>
-              <button class="mt-8 bg-white hover:bg-secondary text-primary font-bold py-3 px-6 rounded inline-flex items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-                <span className="mr-2"> Learn More</span> <HiArrowNarrowRight />
-              </button>
+              <a href="mailto:hello@healthgotechnologies.com">
+                <button className="mt-8 bg-white hover:bg-secondary text-primary font-bold py-3 px-6 rounded inline-flex items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                  <span className="mr-2"> Contact Us</span>
+                  <HiArrowNarrowRight />
+                </button>
+              </a>
             </div>
             <div className="col-span-3 lg:pt-0 pt-20 animate__animated animate__wobble animate__infinite infinite">
-              <img src={Img7} alt="" />
+              <img src={Img7} alt="Contact Us" />
             </div>
           </div>
         </FadeIn>
       </section>
-      <div className="waitlist-section-down pt-20 lg:pt-48 "></div>
+      <div className="waitlist-section-down pt-36 lg:pt-72 "></div>
     </>
   );
 };

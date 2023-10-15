@@ -9,33 +9,28 @@ import Person1 from "../Assets/person1.svg";
 import Person2 from "../Assets/person2.svg";
 import Person3 from "../Assets/person3.svg";
 import Person4 from "../Assets/person4.svg";
-import Person5 from "../Assets/person5.svg";
-import Person6 from "../Assets/person6.svg";
+import Person6 from "../Assets/person6.png";
 import Person7 from "../Assets/person7.svg";
 import Person8 from "../Assets/person8.svg";
-import Person9 from "../Assets/person9.svg";
-import Person10 from "../Assets/person10.svg";
-import Person11 from "../Assets/person11.svg";
-import Person15 from "../Assets/person15.svg";
 import Person16 from "../Assets/person16.svg";
-import Person17 from "../Assets/person17.svg";
-import Person18 from "../Assets/person18.svg";
-import Person19 from "../Assets/person19.svg";
+import Person17 from "../Assets/person17.png";
+import Person18 from "../Assets/person18.png";
+import Person19 from "../Assets/person19.png";
 import Person20 from "../Assets/person20.svg";
-import Person21 from "../Assets/person21.svg";
-import Person22 from "../Assets/person22.svg";
-import Person23 from "../Assets/person23.svg";
+import Person23 from "../Assets/person23.png";
+import Person26 from "../Assets/person26.svg";
 import { FadeIn } from "react-slide-fade-in";
+import { HiArrowNarrowRight } from "react-icons/hi";
 const About = () => {
   const objectList = [
     {
       Img: Person1,
-      Name: "DivineGift Asoetan",
+      Name: "Divinegift Soetan",
       Position: "CEO/Co-Founder",
     },
     {
       Img: Person20,
-      Name: "Olabisi Folorunsho",
+      Name: "Olabisi Folorunso-Lanlehin",
       Position: "COO/Co-Founder",
     },
     {
@@ -74,11 +69,6 @@ const About = () => {
       Position: "Web Developer",
     },
     {
-      Img: Person21,
-      Name: "Onyedikachi Marvellous",
-      Position: "Content Developer",
-    },
-    {
       Img: Person19,
       Name: "Caleb Nwachukwu",
       Position: "Web Developer",
@@ -93,10 +83,20 @@ const About = () => {
       Name: "Habeeb Mustapha",
       Position: "Graphics Designer",
     },
+    {
+      Img: Person2,
+      Name: "Precious Soetan",
+      Position: "Lead Content Writer",
+    },
+    {
+      Img: Person26,
+      Name: "Abdullahi Adam",
+      Position: "Technical Writer",
+    },
   ];
   return (
     <div className="container-box bg-secondary">
-      <section className="lg:p-20 p-10 lg:grid grid-cols-7  ">
+      <section className="lg:p-20 p-10 lg:grid grid-cols-7 lg-screen ">
         <div className="col-span-4 mr-30 pb-20">
           <p className="waitlist-head text-primary">About Us</p>
           <div className="col-span-4">
@@ -107,8 +107,8 @@ const About = () => {
               delayInMilliseconds={0}
             >
               <p className="text-blackk about-sub mt-5 ">
-                HealthGO Technologies is Africa’s gateway to quality, affordable
-                and faster Healthcare.
+                HealthGo is Africa’s gateway to quality, affordable and faster
+                healthcare assistance leveraging blockchain and AI.
               </p>
             </FadeIn>
             <div className="offer text-blackk mt-5">
@@ -158,15 +158,15 @@ const About = () => {
           </div>
         </div>
         <div className="col-span-3 relative">
-          <img src={Img4} className="on-top animate-spin" alt="" />
-          <img src={Img3} className="carry " alt="" />
+          <img src={Img4} className="on-top hover:animate-spin" alt="about" />
+          <img src={Img3} className="carry " alt="about" />
         </div>
       </section>
       <Mission2 />
       <section>
-        <div className="lg:p-20 lg:pt-20 p-10 lg:grid grid-cols-7">
+        <div className="lg:p-20 lg:pt-20 p-10 lg:grid grid-cols-7 lg-screen">
           <div className="col-span-4 mr-30">
-            <p className="waitlist-head text-primary">Milestones</p>
+            <p className="waitlist-head text-primary">Roadmap</p>
             <div className="col-span-4">
               <FadeIn
                 from="left"
@@ -175,8 +175,8 @@ const About = () => {
                 delayInMilliseconds={0}
               >
                 <p className="text-blackk about-sub mt-5 ">
-                  HealthGO Technologies is Africa’s gateway to quality,
-                  affordable and faster Healthcare.
+                  Step-by-step process of building a usable and sustaiinable
+                  product
                 </p>
               </FadeIn>
               <div className="offer text-blackk mt-5">
@@ -186,12 +186,10 @@ const About = () => {
                   triggerOffset={200}
                   delayInMilliseconds={200}
                 >
-                  <p>At HealthGO, we offer: </p>
-                  <div className="list">
-                    <p>1.</p>
-                    <p className="ml-3">
-                      Teletherapy and Consultations with Doctors and other
-                      health personels.
+                  <div>
+                    <p>
+                      Explore our product milestones and progress by clicking
+                      the button below.
                     </p>
                   </div>
                 </FadeIn>
@@ -199,28 +197,14 @@ const About = () => {
                   from="left"
                   positionOffset={400}
                   triggerOffset={200}
-                  delayInMilliseconds={400}
+                  delayInMilliseconds={200}
                 >
-                  <div className="list">
-                    <p>2.</p>
-                    <p className="ml-3">
-                      Online purchase of drugs, kits and other items from
-                      Pharmacies via the HealthGO mobile App.
-                    </p>
-                  </div>
-                </FadeIn>
-                <FadeIn
-                  from="left"
-                  positionOffset={400}
-                  triggerOffset={200}
-                  delayInMilliseconds={600}
-                >
-                  <div className="list">
-                    <p>3.</p>
-                    <p className="ml-3">
-                      Health education in a dynamic and better way.
-                    </p>
-                  </div>
+                  <a href="https://docs.healthgotechnologies.com/healthgo/roadmap">
+                    <button className="mt-8 bg-primary text-white font-bold py-3 px-6 rounded inline-flex items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                      <span className="mr-2">See Roadmap</span>
+                      <HiArrowNarrowRight />
+                    </button>
+                  </a>
                 </FadeIn>
               </div>
             </div>
@@ -228,40 +212,50 @@ const About = () => {
           <div className="col-span-3 lg:pt-0 pt-20">
             <img
               src={Img7}
-              alt=""
+              alt="Roadmap"
               className="animate__animated animate__infinite	infinite animate__swing"
             />
           </div>
         </div>
       </section>
-      <div className="waitlist-section pt-32 lg:pt-60"></div>
-      <section className="pb-10 bg-primary lg:p-20 p-10">
-        <p className="about-header  text-white text-center ">Meet The Team</p>
-        <p className="text-white about-sub pt-10">
-          Meet the committed brains and hands building HealthGO Technologies and
-          pushing the gospel of affordable and quality healthcare for every
-          African.
-        </p>
-        <div className="pt-10 grid lg:grid-cols-4 md:grid-cols-2 gap-10">
-          {objectList.map((person, i) => {
-            return (
-              <div className="relative mt-28">
-                <img src={person.Img} alt="" className="absolute team-image" />
-                <img src={Logo} alt="" className="team-logo absolute" />
-                <div className="about-card">
-                  <p className="team-name text-primary text-center pt-20">
-                    {person.Name}
-                  </p>
-                  <p className="team-title text-center pt-2">
-                    {person.Position}
-                  </p>
+      <div className="waitlist-section pt-36 lg:pt-72"></div>
+      <section className="pb-10 bg-primary lg:p-20 p-10 ">
+        <div className="lg-screen">
+          <p className="about-header  text-white text-center ">Meet The Team</p>
+          <p className="text-white about-sub pt-10">
+            Meet the committed brains and hands building HealthGO Technologies
+            and pushing the gospel of affordable and quality healthcare for
+            every African.
+          </p>
+          <div className="pt-10 grid lg:grid-cols-4 md:grid-cols-2 gap-10">
+            {objectList.map((person, i) => {
+              return (
+                <div className="relative mt-28">
+                  <img
+                    src={person.Img}
+                    alt="Team Pic"
+                    className="absolute team-image"
+                  />
+                  <img
+                    src={Logo}
+                    alt="Healthgo Logo"
+                    className="team-logo absolute"
+                  />
+                  <div className="about-card">
+                    <p className="team-name text-primary text-center pt-20">
+                      {person.Name}
+                    </p>
+                    <p className="team-title text-center pt-2">
+                      {person.Position}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </section>
-      <div className="waitlist-section-down pt-32 lg:pt-48 "></div>
+      <div className="waitlist-section-down pt-36 lg:pt-72 "></div>
       <Connect />
     </div>
   );

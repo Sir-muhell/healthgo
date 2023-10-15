@@ -7,7 +7,7 @@ import Logo from "../Assets/image5.svg";
 const WhoWeAre = () => {
   return (
     <div className="container-box bg-secondary overflow-hidden">
-      <section className="lg:p-20 p-10">
+      <section className="lg:p-20 p-10 lg-screen">
         <p className="heading text-primary">Who We Are...</p>
         <div className="lg:grid grid-cols-7 lg:mt-20 mt-10">
           <div className="col-span-4 lg:pr-20  wwa">
@@ -17,8 +17,8 @@ const WhoWeAre = () => {
               all.
             </p>
             <div className="relative">
-              <img src={Logo} alt="" className="over-up" />
-              <img src={Logo} alt="" className="over-down" />
+              <img src={Logo} alt="Healthgo Logo" className="over-up" />
+              <img src={Logo} alt="Healthgo Logo" className="over-down" />
               <div className="wwa-text text-blackk mt-10">
                 <p>
                   With this in mind, we have put more work into the research
@@ -42,7 +42,7 @@ const WhoWeAre = () => {
             </div>
           </div>
           <div className="col-span-3 lg:pt-0 pt-20">
-            <img src={Img1} alt="" />
+            <img src={Img1} alt="WWA design" />
           </div>
         </div>
       </section>

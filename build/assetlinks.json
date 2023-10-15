@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "healthgo",
+      "package_name": "com.healthgo",
+      "sha256_cert_fingerprints": [
+        "FE:08:87:85:81:43:31:20:DD:59:A0:42:C9:2F:03:31:4F:84:34:AD:32:21:F9:F7:CB:EC:92:37:63:91:B9:40"
+      ]
+    }
+  }
+]

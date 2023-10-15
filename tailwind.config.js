@@ -12,6 +12,9 @@ module.exports = {
         tertiary: "#6D6D6D",
         blackk: "#002912",
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
     },
   },
 };

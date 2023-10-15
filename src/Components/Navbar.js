@@ -1,23 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import { FaTimes } from "react-icons/fa";
 import { HiArrowNarrowRight, HiMenuAlt1 } from "react-icons/hi";
-import { BsChevronRight } from "react-icons/bs";
+import { BsChevronDown, BsChevronRight } from "react-icons/bs";
 
 import { NavLink } from "react-router-dom";
 import Logo from "../Assets/logo.svg";
-
 export default function Navbar() {
+  const excludedRef = useRef(null);
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsButtonClicked(true);
+  };
+
+  useEffect(() => {
+    function handleClick(event) {
+      // Check if the target element is within the excluded portion
+      if (excludedRef.current && excludedRef.current.contains(event.target)) {
+        // Click occurred within the excluded portion, do nothing
+        return;
+      }
+
+      // Click occurred outside the excluded portion
+      setIsButtonClicked(true);
+    }
+
+    // Attach event listener to document on component mount
+    document.addEventListener("click", handleClick);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
   return (
     <>
       <nav
-        className="navbar bg-primary"
-        style={{ maxWidth: "1700px", margin: "0 auto" }}
+        className={click ? "navbar bg-primary" : "navbar hidden"}
+        style={{ maxWidth: "1700px", margin: "0 auto", overflowX: "" }}
       >
         <div className="navbar-container bg-primary lg:pl-20 pl-10 pr-10 lg:pr-20">
           <div className="navbar-logo">
@@ -25,7 +51,7 @@ export default function Navbar() {
               <img src={Logo} alt="Logo" className="logo" />
             </NavLink>
           </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <ul className={click ? "nav-menu active" : "nav-menu hidden"}>
             <li className="nav-item ">
               <NavLink
                 to="/"
@@ -75,15 +101,31 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item dropdown">
-              <div className="nav-links">
+              <div className="nav-links" onClick={handleButtonClick}>
                 <div className="flex items-center">
                   Learn More
-                  <span className="lg:hidden md:hidden chevron">
+                  {/* {!isButtonClicked && ( */}
+                  <span
+                    ref={excludedRef}
+                    className="lg:ml-2 lg:hidden md:hidden chevron"
+                  >
                     <BsChevronRight />
+                  </span>
+                  {/* )} */}
+                  {/* {isButtonClicked && (
+                    <span
+                      ref={excludedRef}
+                      className="lg:ml-2 lg:hidden md:hidden chevron"
+                    >
+                      <BsChevronDown />
+                    </span>
+                  )} */}
+                  <span className="lg:ml-2 hidden lg:block chevron">
+                    <BsChevronDown />
                   </span>
                 </div>
               </div>
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <NavLink
                   to="/who-we-are"
                   className={({ isActive }) =>
@@ -130,14 +172,14 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/contact"
+                to="/partner"
                 className={({ isActive }) =>
                   "nav-links" + (isActive ? " activated" : "")
                 }
                 onClick={closeMobileMenu}
               >
                 <div className="flex items-center">
-                  Contact
+                  Become a Partner
                   <span className="lg:hidden md:hidden chevron">
                     <BsChevronRight />
                   </span>
@@ -146,10 +188,20 @@ export default function Navbar() {
             </li>
           </ul>
           <div className="header-icons-box">
-            <button class="bg-white hover:bg-secondary text-primary font-bold py-2 px-4 rounded inline-flex items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-              <span className="mr-2">Get Started</span>
-              <HiArrowNarrowRight />
-            </button>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.healthgo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                className="bg-white hover:bg-secondary text-primary
+              
+              font-bold py-2 px-4 rounded inline-flex items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+              >
+                <span className="mr-2">Get Started</span>
+                <HiArrowNarrowRight />
+              </button>
+            </a>
           </div>
           <div className="menu-icon text-white" onClick={handleClick}>
             {click ? <FaTimes /> : <HiMenuAlt1 />}

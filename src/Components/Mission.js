@@ -4,13 +4,13 @@ import Img6 from "../Assets/image7.svg";
 
 const Mission = () => {
   return (
-    <div className="lg:p-20 lg:pt-20 p-10 ">
+    <div className="lg:p-20 lg:pt-20 p-10  ">
       <p className="h-about-header lg:text-primary text-primary text-center">
         About Us
       </p>
       <div className="mt-10 grid grid-cols-7 mission">
         <div className="col-span-2 ">
-          <img src={Img5} className="mission-img" alt="" />
+          <img src={Img5} className="mission-img" alt="Mission" />
         </div>
         <div className="col-span-5 ">
           <p className="text-blackk about-text">
@@ -27,7 +27,7 @@ const Mission = () => {
           </p>
         </div>
         <div className="col-span-2">
-          <img src={Img6} className="img5 mission-img" alt="" />
+          <img src={Img6} className="img5 mission-img" alt="Vision" />
         </div>
       </div>
     </div>
