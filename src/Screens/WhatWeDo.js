@@ -105,17 +105,17 @@ const WhatWeDo = () => {
             <div className="product-card relative">
               <img src={Img4} alt="Product" className="card-img" />
               <p className="pt-20 card-head text-primary">
-                Medication and Diagnosis Delivery
+                Fractionalized Healthcare Insurance
               </p>
               <p className="pt-10 text-blackk card-text">
-                To save customers time, money, and effort, we provide doorstep
-                delivery of medical care and test results, in-house testing to
-                individual users, and virtual delivery of test results.
+                To provide affordable healthcare to Middle and low-income
+                earners, we are facilitating fractionalised healthcare plans and
+                benefits to individuals, driving economic growth.
               </p>
               <img src={Logo} alt="Healthgo Logo" className="card-logo" />
             </div>
           </div>
-          <div className="lg:grid grid-cols-2 lg:pt-48">
+          {/* <div className="lg:grid grid-cols-2 lg:pt-48">
             <div className="product-card-big relative lg:pt-0 ">
               <img src={Img5} alt="Product" className="card-img" />
               <p className="pt-20 card-head text-primary">In-app Finances</p>
@@ -143,7 +143,7 @@ const WhatWeDo = () => {
               </p>
               <img src={Logo} alt="Healthgo Logo" className="card-logo" />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <div className="waitlist-section-down pt-40 lg:pt-60 "></div>

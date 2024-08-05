@@ -11,6 +11,7 @@ module.exports = {
         secondary: "#DBFAE7",
         tertiary: "#6D6D6D",
         blackk: "#002912",
+        button: "#D0FCDF",
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",

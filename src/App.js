@@ -16,11 +16,28 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Error from "./Screens/404";
 import Partner from "./Screens/Partner";
 import Footer2 from "./Components/Footer2";
+import Img4 from "./Assets/image5.svg";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
+if (process.env.NODE_ENV === "production") {
+  disableReactDevTools();
+}
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop>
+        <FloatingWhatsApp
+          phoneNumber="+2347087780540" // Required
+          accountName="HealthGO" // Optional
+          avatar={Img4} // Optional
+          initialMessageByServer="Hi there! How can I assist you?" // Optional
+          statusMessage="Available" // Optional
+          placeholder="Write here..." // Optional
+          allowEsc={true} // Optional
+          darkMode={true}
+          // Explore all available props below
+        />
         <Navbar />
         <Routes>
           <Route

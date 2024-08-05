@@ -5,12 +5,12 @@ import Icon3 from "../Assets/icon3.svg";
 import Icon4 from "../Assets/icon4.svg";
 import Icon5 from "../Assets/icon5.svg";
 import Icon6 from "../Assets/icon6.svg";
-import Img8 from "../Assets/image9.svg";
+import Img8 from "../Assets/comm.svg";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 const Connect = () => {
   return (
-    <section className="lg:p-20 lg:pt-40 lg:pb-0 p-10 pt-20 lg-screen">
+    <section className="lg:p-20 lg:pt-40 lg:pb-10 p-10 pt-20 lg-screen">
       <div className="lg:grid grid-cols-7">
         <div className="col-span-3">
           <img
@@ -20,14 +20,14 @@ const Connect = () => {
           />
         </div>
         <div className="col-span-4 lg:pl-20">
-          <p className="waitlist-head text-primary ">Let's Connect</p>
+          <p className="waitlist-head text-blackk ">Let's Connect</p>
           <div className="col-span-4">
-            <p className="text-blackk  connect-text pt-10 ">
+            <p className="text-blackk  connect-text lg:pt-10 pt-5 ">
               Connect with HealthGO on various social media platforms via the
               links below...or send a mail.
             </p>
           </div>
-          <div className="pt-10 icons animate__animated animate__shakeX animate__delay-5s ">
+          <div className="pt-10 socials  icons animate__animated animate__shakeX animate__delay-5s ">
             <a href="https://www.linkedin.com/company/healthgohq/">
               <img src={Icon6} alt="linkedin" />
             </a>
@@ -45,7 +45,7 @@ const Connect = () => {
               <img src={Icon4} alt="medium" />
             </a>
           </div>
-          <button className="mt-8 bg-secondary border border-primary hover:bg-primary hover:text-white text-primary font-bold py-3 px-6 rounded  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+          <button className="mt-8 bg-botton connect-btn border border-blackk hover:bg-blackk hover:text-white text-blackk font-bold py-3 px-6 rounded  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
             <a
               href="mailto:hello@healthgotechnologies.com"
               className="inline-flex items-center"

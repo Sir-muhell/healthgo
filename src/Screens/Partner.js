@@ -149,7 +149,7 @@ const Partner = () => {
               </p>
               <p className="partner-card-t mt-5">
                 Earn commissions for each valid lead of individuals and startups
-                you refer to Healtgo. No other implementation is required.
+                you refer to Healthgo. No other implementation is required.
               </p>
             </div>
           </div>

@@ -48,7 +48,7 @@ const Footer2 = () => {
   };
   return (
     <div>
-      <section className="bg-primary pt-20">
+      <section className="bg-primary pt-0">
         <div className="footer lg:p-20 lg:pt-0 p-10 lg:grid md:grid grid-cols-2 gap-10 lg:block md:block hidden lg-screen">
           <div className="lg:grid grid-cols-2  gap-5">
             <div>
@@ -115,11 +115,11 @@ const Footer2 = () => {
                 <ul className="text-white">
                   <li>
                     <a
-                      href="https://play.google.com/store/apps/details?id=com.healthgo"
+                      href="https://insurance.healthgotechnologies.com"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Download the App
+                      Get Started
                     </a>
                   </li>
                   <li>
@@ -218,11 +218,11 @@ const Footer2 = () => {
               <ul className="text-white">
                 <li>
                   <a
-                    href="https://play.google.com/store/apps/details?id=com.healthgo"
+                    href="https://insurance.healthgotechnologies.com"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Download the App
+                    Get Started
                   </a>
                 </li>
                 <li>

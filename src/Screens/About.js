@@ -8,17 +8,18 @@ import Mission2 from "../Components/Mission2";
 import Person1 from "../Assets/person1.svg";
 import Person2 from "../Assets/person2.svg";
 import Person3 from "../Assets/person3.svg";
+import Person5 from "../Assets/person5.svg";
 import Person4 from "../Assets/person4.svg";
 import Person6 from "../Assets/person6.png";
 import Person7 from "../Assets/person7.svg";
 import Person8 from "../Assets/person8.svg";
 import Person16 from "../Assets/person16.svg";
-import Person17 from "../Assets/person17.png";
-import Person18 from "../Assets/person18.png";
-import Person19 from "../Assets/person19.png";
+import Person17 from "../Assets/person17b.webp";
 import Person20 from "../Assets/person20.svg";
-import Person23 from "../Assets/person23.png";
 import Person26 from "../Assets/person26.svg";
+import Person28 from "../Assets/person28.png";
+import Person29 from "../Assets/person29.svg";
+import Person30 from "../Assets/person30.svg";
 import { FadeIn } from "react-slide-fade-in";
 import { HiArrowNarrowRight } from "react-icons/hi";
 const About = () => {
@@ -35,8 +36,13 @@ const About = () => {
     },
     {
       Img: Person3,
-      Name: "Kolawole Elijah",
-      Position: "CTO",
+      Name: "Elijah Kolawole",
+      Position: "CTO/Co-Founder",
+    },
+    {
+      Img: Person8,
+      Name: "Dr. Eileen C. Okenwa",
+      Position: "Chief Innovation Officer",
     },
     {
       Img: Person4,
@@ -44,24 +50,14 @@ const About = () => {
       Position: "Project Manager",
     },
     {
-      Img: Person8,
-      Name: "Okunade Ifeoluwa",
-      Position: "Lead Medical Director",
-    },
-    {
-      Img: Person23,
-      Name: "Mustapha Favour",
-      Position: "Product Designer",
-    },
-    {
-      Img: Person6,
-      Name: "Sanusi Habib",
-      Position: "Graphics Designer",
-    },
-    {
       Img: Person7,
-      Name: "Ajiboye Gideon",
-      Position: "Web Developer",
+      Name: "Gideon Ajiboye",
+      Position: "Product Manager",
+    },
+    {
+      Img: Person30,
+      Name: "Ayomide Obiwale",
+      Position: "Mobile Developer",
     },
     {
       Img: Person17,
@@ -69,29 +65,39 @@ const About = () => {
       Position: "Web Developer",
     },
     {
-      Img: Person19,
-      Name: "Caleb Nwachukwu",
-      Position: "Web Developer",
-    },
-    {
       Img: Person16,
-      Name: "Kolawole Emmanuel",
-      Position: "BackEnd Developer",
+      Name: "Emmanuel Kolawole",
+      Position: "BackEnd Development Lead",
     },
     {
-      Img: Person18,
-      Name: "Habeeb Mustapha",
+      Img: Person28,
+      Name: "Joshua Ayoola",
+      Position: "Product Design Lead",
+    },
+    {
+      Img: Person5,
+      Name: "Samuel Mensah",
+      Position: "Graphics Design Lead",
+    },
+    {
+      Img: Person6,
+      Name: "Sanusi Habib",
       Position: "Graphics Designer",
+    },
+    {
+      Img: Person29,
+      Name: "Abel Agbele",
+      Position: "Motion Designer",
     },
     {
       Img: Person2,
       Name: "Precious Soetan",
-      Position: "Lead Content Writer",
+      Position: "Customer Success Lead",
     },
     {
       Img: Person26,
       Name: "Abdullahi Adam",
-      Position: "Technical Writer",
+      Position: "Content Writer",
     },
   ];
   return (
@@ -107,8 +113,10 @@ const About = () => {
               delayInMilliseconds={0}
             >
               <p className="text-blackk about-sub mt-5 ">
-                HealthGo is Africa’s gateway to quality, affordable and faster
-                healthcare assistance leveraging blockchain and AI.
+                HealthGO Health Technology Limited is fractionalizing health
+                insurance, breaking the barriers for middle and low-income
+                earners to access affordable and beneficial health insurance
+                easily.
               </p>
             </FadeIn>
             <div className="offer text-blackk mt-5">
@@ -122,8 +130,7 @@ const About = () => {
                 <div className="list">
                   <p>1.</p>
                   <p className="ml-3">
-                    Teletherapy and Consultations with Doctors and other health
-                    personels.
+                    Pay small small Health insurance product
                   </p>
                 </div>
               </FadeIn>
@@ -135,10 +142,7 @@ const About = () => {
               >
                 <div className="list">
                   <p>2.</p>
-                  <p className="ml-3">
-                    Online purchase of drugs, kits and other items from
-                    Pharmacies via the HealthGO mobile App.
-                  </p>
+                  <p className="ml-3">Credit to Healthcare MSMEs</p>
                 </div>
               </FadeIn>
               <FadeIn
@@ -149,9 +153,29 @@ const About = () => {
               >
                 <div className="list">
                   <p>3.</p>
-                  <p className="ml-3">
-                    Health education in a dynamic and better way.
-                  </p>
+                  <p className="ml-3">Advance healthcare benefits</p>
+                </div>
+              </FadeIn>
+              <FadeIn
+                from="left"
+                positionOffset={400}
+                triggerOffset={200}
+                delayInMilliseconds={600}
+              >
+                <div className="list">
+                  <p>4.</p>
+                  <p className="ml-3">Health Education</p>
+                </div>
+              </FadeIn>
+              <FadeIn
+                from="left"
+                positionOffset={400}
+                triggerOffset={200}
+                delayInMilliseconds={600}
+              >
+                <div className="list">
+                  <p>5.</p>
+                  <p className="ml-3">Healthcare Donation</p>
                 </div>
               </FadeIn>
             </div>
@@ -223,9 +247,8 @@ const About = () => {
         <div className="lg-screen">
           <p className="about-header  text-white text-center ">Meet The Team</p>
           <p className="text-white about-sub pt-10">
-            Meet the committed brains and hands building HealthGO Technologies
-            and pushing the gospel of affordable and quality healthcare for
-            every African.
+            Meet the committed brains and hands building HealthGO and pushing
+            the gospel of affordable and quality healthcare for every African.
           </p>
           <div className="pt-10 grid lg:grid-cols-4 md:grid-cols-2 gap-10">
             {objectList.map((person, i) => {

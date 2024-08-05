@@ -22,8 +22,8 @@ const Mission = () => {
       <div className=" grid grid-cols-7 mission lg:mt-40 mt-20">
         <div className="col-span-5 ">
           <p className="text-blackk about-text">
-            At HealthGO, Our vision is to ensure that we grow our users’
-            finances while keeping them healthy.
+            At, HealthGo our vision is to build economical healthcare gateway,
+            ensuring easy access for low-income earners.
           </p>
         </div>
         <div className="col-span-2">

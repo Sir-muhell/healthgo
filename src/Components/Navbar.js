@@ -3,9 +3,11 @@ import React, { useState, useEffect, useRef } from "react";
 import { FaTimes } from "react-icons/fa";
 import { HiArrowNarrowRight, HiMenuAlt1 } from "react-icons/hi";
 import { BsChevronDown, BsChevronRight } from "react-icons/bs";
-
+import { FaInfoCircle } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import Logo from "../Assets/logo.svg";
+import Arrow from "../Assets/arrow.png";
+// import Logo from "../Assets/logo2.png";
 export default function Navbar() {
   const excludedRef = useRef(null);
   const [click, setClick] = useState(false);
@@ -41,6 +43,28 @@ export default function Navbar() {
   }, []);
   return (
     <>
+      {/* <div className="bg-secondary text-primary align-center content-center lg:pl-20 pl-10 pr-10 lg:pr-20 lg:grid lg:grid-cols-10">
+        <p className="lg:text-2xl text-xl lg:pt-5 pt-2 font-semibold col-span-8 inline-flex ">
+          <span className="mr-5 justify-center">
+            <FaInfoCircle />
+          </span>
+          We are running a healthcare survey, kindly spare 2 minutes to give
+          your feedback
+        </p>
+
+        <a
+          href="https://docs.google.com/forms/d/14DXxnqA5LXkxq7T957pHAF8jhHZsyLXF-wJpxY8DjpQ/edit"
+          target="_blank"
+          rel="noreferrer"
+          className="col-span-2 mt-3 pb-3 lg:mt-5 lg:mb-5 justify-center flex"
+        >
+          <button className="bg-primary hover:bg-white hover:text-primary text-white font-bold py-2 px-4 rounded inline-flex items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            <span className="mr-2">Start Survey</span>
+            <HiArrowNarrowRight />
+          </button>
+          <img src={Arrow} alt="arrow" className="h-10" />
+        </a>
+      </div> */}
       <nav
         className={click ? "navbar bg-primary" : "navbar hidden"}
         style={{ maxWidth: "1700px", margin: "0 auto", overflowX: "" }}
@@ -48,7 +72,12 @@ export default function Navbar() {
         <div className="navbar-container bg-primary lg:pl-20 pl-10 pr-10 lg:pr-20">
           <div className="navbar-logo">
             <NavLink to="/" onClick={closeMobileMenu}>
-              <img src={Logo} alt="Logo" className="logo" />
+              <img
+                src={Logo}
+                alt="Logo"
+                className="logo lg:h-14"
+                // style={{ height: "60px" }}
+              />
             </NavLink>
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu hidden"}>
@@ -189,7 +218,7 @@ export default function Navbar() {
           </ul>
           <div className="header-icons-box">
             <a
-              href="https://play.google.com/store/apps/details?id=com.healthgo"
+              href="https://insurance.healthgotechnologies.com"
               target="_blank"
               rel="noreferrer"
             >
