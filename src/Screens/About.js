@@ -9,7 +9,6 @@ import Person1 from "../Assets/person1.svg";
 import Person2 from "../Assets/person2.svg";
 import Person3 from "../Assets/person3.svg";
 import Person5 from "../Assets/person5.svg";
-import Person4 from "../Assets/person4.svg";
 import Person6 from "../Assets/person6.png";
 import Person7 from "../Assets/person7.svg";
 import Person8 from "../Assets/person8.svg";
@@ -17,9 +16,9 @@ import Person16 from "../Assets/person16.svg";
 import Person17 from "../Assets/person17b.webp";
 import Person20 from "../Assets/person20.svg";
 import Person26 from "../Assets/person26.svg";
-import Person28 from "../Assets/person28.png";
 import Person29 from "../Assets/person29.svg";
 import Person30 from "../Assets/person30.svg";
+import Person31 from "../Assets/person31.svg";
 import { FadeIn } from "react-slide-fade-in";
 import { HiArrowNarrowRight } from "react-icons/hi";
 const About = () => {
@@ -45,9 +44,9 @@ const About = () => {
       Position: "Chief Innovation Officer",
     },
     {
-      Img: Person4,
-      Name: "Chinedu Elijah",
-      Position: "Project Manager",
+      Img: Person31,
+      Name: "Darian Johnson",
+      Position: "Chief Investment Officer",
     },
     {
       Img: Person7,
@@ -68,11 +67,6 @@ const About = () => {
       Img: Person16,
       Name: "Emmanuel Kolawole",
       Position: "BackEnd Development Lead",
-    },
-    {
-      Img: Person28,
-      Name: "Joshua Ayoola",
-      Position: "Product Design Lead",
     },
     {
       Img: Person5,
