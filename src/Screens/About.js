@@ -40,7 +40,7 @@ const About = () => {
     },
     {
       Img: Person8,
-      Name: "Dr. Eileen C. Okenwa",
+      Name: "Dr. Eileen  Cheng",
       Position: "Chief Innovation Officer",
     },
     {
