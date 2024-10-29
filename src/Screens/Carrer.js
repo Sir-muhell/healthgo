@@ -8,19 +8,18 @@ const Carrer = () => {
       <div className="lg:grid grid-cols-7 lg:p-20 p-10">
         <div className="col-span-4 lg:mr-20 lg:mt-20 align-center career-box">
           <p className="text-primary career-head">
-            There are no open roles currently...
+            We are hiring sales representatives
           </p>
           <p className="sub-head mt-10">
-            Kindly join our wait list to be informed as soon as there’s any open
-            role at HealthGO.
+            Contact us to submit your application.
           </p>
           <a
-            href="https://forms.gle/ebsNDXNyoKX1V9GK6"
+            href="mailto:emmanuel@healthgotechnologies.com"
             target="_blank"
             rel="noreferrer"
           >
             <button className="mt-8 bg-primary hover:bg-white hover:text-primary text-white font-bold py-3 px-6 rounded inline-flex items-center">
-              <span className="mr-2">Join Waitlist</span> <HiArrowNarrowRight />
+              <span className="mr-2">Send your CV</span> <HiArrowNarrowRight />
             </button>
           </a>
         </div>

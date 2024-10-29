@@ -15,6 +15,7 @@ import Partner5 from "../Assets/partner2.svg";
 import Partner6 from "../Assets/partner8.png";
 import Partner7 from "../Assets/partner9.png";
 import Partner8 from "../Assets/partner10.png";
+import Partner11 from "../Assets/partner11.png";
 import Heart from "../Assets/heart.svg";
 import Deposit from "../Assets/deposit.svg";
 import Package from "../Assets/package.svg";
@@ -35,6 +36,7 @@ const images = [
   Partner5,
   Partner6,
   Partner7,
+  Partner11,
 ];
 
 const Home = () => {

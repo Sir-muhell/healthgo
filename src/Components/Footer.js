@@ -64,7 +64,7 @@ const Footer = () => {
                 <span className="mr-3">
                   <MdLocationOn className="icon" />
                 </span>
-                Lagos, Nigeria
+                Lagos, Nigeria | Delaware, USA
               </li>
               <li>
                 <a
@@ -279,7 +279,7 @@ const Footer = () => {
               <span className="mr-3">
                 <MdLocationOn className="icon" />
               </span>
-              Lagos, Nigeria
+              Lagos, Nigeria | Delaware, USA
             </li>
             <li className="flex items-center text-white">
               <a

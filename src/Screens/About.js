@@ -88,11 +88,11 @@ const About = () => {
       Name: "Precious Soetan",
       Position: "Customer Success Lead",
     },
-    {
-      Img: Person26,
-      Name: "Abdullahi Adam",
-      Position: "Content Writer",
-    },
+    // {
+    //   Img: Person26,
+    //   Name: "Abdullahi Adam",
+    //   Position: "Content Writer",
+    // },
   ];
   return (
     <div className="container-box bg-secondary">
